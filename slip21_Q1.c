@@ -3,7 +3,7 @@
 #include <unistd.h>
 int main()
 {
- // fork() Create a child process
+
  int pid = fork();
  if (pid > 0) {
  printf("I am Parent process\n");
@@ -11,7 +11,7 @@ int main()
  }
  else if (pid == 0) {
  printf("I am Child process\n");
- // getpid() will return process id of child process
+
  printf("ID: %d\n", getpid());
 
  }
